@@ -3,14 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>harry's site</title>
+    <link rel="stylesheet" href="assets/css/petals.css">
+    <style>
+        @font-face {
+            font-family: 'Ubuntu Nerd Font';
+            src: url('assets/fonts/UbuntuNerdFont-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        :root {
+            color-scheme: light dark;
+        }
+
+        body {
+            font-family: 'Ubuntu Nerd Font', 'Ubuntu', sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            background: var(--bg-gradient, linear-gradient(180deg, #f7efff 0%, #ffffff 60%));
+            color: var(--text-color, #1f1230);
+            transition: background 0.6s ease, color 0.3s ease;
+        }
+
+        body.theme-light {
+            --bg-gradient: linear-gradient(180deg, #f7efff 0%, #ffffff 60%);
+            --text-color: #1f1230;
+            --toggle-bg: rgba(255, 255, 255, 0.85);
+            --toggle-border: rgba(31, 18, 48, 0.2);
+            --toggle-color: #1f1230;
+            --toggle-hover-bg: rgba(243, 227, 255, 0.95);
+        }
+
+        body.theme-dark {
+            --bg-gradient: linear-gradient(180deg, #120821 0%, #1f1230 60%);
+            --text-color: #f3e3ff;
+            --toggle-bg: rgba(25, 15, 39, 0.85);
+            --toggle-border: rgba(243, 227, 255, 0.2);
+            --toggle-color: #f3e3ff;
+            --toggle-hover-bg: rgba(67, 42, 103, 0.9);
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.4rem 0.9rem;
+            border-radius: 999px;
+            border: 1px solid var(--toggle-border);
+            background: var(--toggle-bg);
+            color: var(--toggle-color);
+            font-family: inherit;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+            z-index: 10;
+        }
+
+        .theme-toggle:hover,
+        .theme-toggle:focus-visible {
+            background: var(--toggle-hover-bg);
+        }
+
+        .theme-toggle:focus-visible {
+            outline: 2px solid var(--toggle-color);
+            outline-offset: 2px;
+        }
+
+        main {
+            padding: clamp(1.5rem, 4vw, 3rem) 1rem 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        p {
+            margin: 0 0 1.5em;
+            width: min(85%, 640px);
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+    </style>
 </head>
-<body>
-    <p>I'm 21. Currently I'm working as a Software Engineer at Luxury Escapes, and prior to that I interned at CSIRO's Australian e-Health Research Centre.</p>
-    <p>I live in Sydney, Australia. My usual coffee order is a large flat white, and sometimes with oat milk if I'm feeling good. I give the barista either "Harry" or "July" as my name.</p>
-    <p>I made this website to put on my LinkedIn, so I’d have an excuse to send more connection requests. I want more people checking out my website. I try to work on my own projects outside of work as well - it complements my work, and vice versa.</p>
-    <p>I really hate going through websites or PowerPoint slide decks that have too much unnecessary blocking animations - it’s like having a 2 second red light every 5 seconds. I want you to know as much about me in as little time as possible.</p>
-    <p>I’m currently Master I on GeoGuessr. I try to write detailed region-guessing notes for each country. Hopefully you can learn something from them.</p>
-    <p>I’m a casual road cyclist, and now I’m starting out running. I read books on the train.</p>
+<body class="theme-light">
+    <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+        <span class="theme-toggle__text">Toggle theme</span>
+    </button>
+    <div class="petals" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <main>
+        <p>I'm 21. Currently I'm working as a Software Engineer at Luxury Escapes, and prior to that I interned at CSIRO's Australian e-Health Research Centre. <a href="https://aehrc.csiro.au/wp-content/uploads/2025/10/AEHRC-ANNUAL-REPORT-2024_25.pdf#page=126">My CSIRO project</a> involved using 3D web frameworks to reconstruct medical scans, which was integrated into <a href="https://aehrc.csiro.au/wp-content/uploads/2025/10/AEHRC-ANNUAL-REPORT-2024_25.pdf#page=69">CSIRO's wider Zendaya Image Analysis Platform</a>.</p>
+        <p>I live in Sydney, Australia. My usual coffee order is a large flat white, and sometimes with oat milk if I'm feeling good.</p>
+        <p>I made this website to put on my LinkedIn, so I’d have an excuse to send more connection requests. I want more people checking out my website. I try to work on my own projects outside of work as well - it complements my work, and vice versa.</p>
+        <p><a href="https://www.reddit.com/r/ProgrammerHumor/comments/5n8t7x/comp_sci_professor_website_starter_pack/">Professor-style websites</a> look really cool, so I'm making my site similar but with a Sydney touch.</p>
+        <p><a href="https://www.geoguessr.com/user/687660725547092f67d9becb">I’m currently Master I on GeoGuessr.</a> I try to write detailed region-guessing notes for each country. Hopefully you can learn something from them just as much as I try not to forget them.</p>
+        <p>I’m a casual road cyclist, and now I’m starting out running.</p>
+    </main>
+    <script type="module" src="assets/js/theme-toggle.js"></script>
 </body>
 </html>
