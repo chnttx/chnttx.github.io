@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitae</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <style>
+        body {
+            margin: 0;
+            background: #f8f5ff;
+            color: #241530;
+        }
+
+        .cv-page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        .cv-header {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .cv-header h1 {
+            margin: 0;
+            font-size: clamp(2.3rem, 6vw, 3.2rem);
+        }
+
+        .cv-contact {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem 1.25rem;
+        }
+
+        .cv-contact li {
+            font-size: 0.95rem;
+        }
+
+        .cv-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.2rem;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+
+        .cv-entry {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .cv-entry__meta {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            font-weight: 600;
+        }
+
+        .cv-entry__meta span {
+            color: rgba(36, 21, 48, 0.7);
+            font-weight: 500;
+        }
+
+        .cv-entry ul {
+            margin: 0;
+            padding-left: 1.2rem;
+            display: grid;
+            gap: 0.4rem;
+        }
+
+        .cv-tags {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+        }
+
+        .cv-tags li {
+            border: 1px solid rgba(36, 21, 48, 0.25);
+            padding: 0.35rem 0.7rem;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            color: rgba(36, 21, 48, 0.65);
+        }
+
+        .cv-placeholder {
+            color: rgba(36, 21, 48, 0.65);
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                color: #000;
+            }
+
+            .cv-page {
+                padding: 1.5cm;
+                gap: 2rem;
+            }
+
+            .cv-tags li {
+                border-color: rgba(0, 0, 0, 0.3);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="cv-page">
+        <a href="./index.html">back to home page</a>
+        <header class="cv-header">
+            <h1><span class="cv-placeholder">Harry Nguyen</span></h1>
+            <p><span class="cv-placeholder">Associate Engineer · 42 Wallaby Way, Sydney, Australia</span></p>
+            <ul class="cv-contact">
+                <li><span class="cv-placeholder"><a href="mailto:chntt@xyz.com">chntt [at] xyz [dot] com</a></span></li>
+                <li><span class="cv-placeholder">website : you are here</span></li>
+                <li><span class="cv-placeholder"><a href="https://www.linkedin.com/in/thn864/">linkedin/in/thn864</a></span></li>
+            </ul>
+        </header>
+
+        <section class="cv-section">
+            <p class="cv-placeholder">I am currently associately engineering software at Luxury Escapes</p>
+        </section>
+
+        <section class="cv-section">
+            <h2>Experience</h2>
+            <article class="cv-entry">
+                <div class="cv-entry__meta">
+                    <h3><span class="cv-placeholder">Associate Engineer · Luxury Escapes</span></h3>
+                    <span class="cv-placeholder">July 2025 - Present</span>
+                </div>
+                <ul>
+                    <li class="cv-placeholder">I am working to personalise your experience even more :)</li>
+                </ul>
+            </article>
+            <article class="cv-entry">
+                <div class="cv-entry__meta">
+                    <h3><span class="cv-placeholder">Vacation Student · CSIRO - Australian e-Health Research Centre</span></h3>
+                    <span class="cv-placeholder">Summer 2024 - 2025</span>
+                </div>
+                <ul>
+                    <li class="cv-placeholder"><a href="https://aehrc.csiro.au/wp-content/uploads/2025/10/AEHRC-ANNUAL-REPORT-2024_25.pdf#page=126">My CSIRO project</a> involved using 3D web frameworks to reconstruct medical scans, which was integrated into <a href="https://aehrc.csiro.au/wp-content/uploads/2025/10/AEHRC-ANNUAL-REPORT-2024_25.pdf#page=69">CSIRO's wider Zendaya Image Analysis Platform</a>.</li>
+                    <li class="cv-placeholder">Presentation title: Multiplanar Reconstruction for MRI/CT scans, supervised by Liz Cooper, PhD. and Jason Dowling, PhD. - 14/02/2025.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- <section class="cv-section">
+            <h2>Projects</h2>
+            <article class="cv-entry">
+                <div class="cv-entry__meta">
+                    <h3><span class="cv-placeholder">Project Name</span></h3>
+                    <span class="cv-placeholder">Year</span>
+                </div>
+                <p class="cv-placeholder">Brief description of what you built, tech used, and impact.</p>
+            </article>
+        </section> -->
+
+        <section class="cv-section">
+            <h2>Education</h2>
+            <article class="cv-entry">
+                <div class="cv-entry__meta">
+                    <h3><span class="cv-placeholder">BSc. in Computer Science · University of Melbourne</span></h3>
+                    <span class="cv-placeholder">2022 — 2025</span>
+                </div>
+                <p class="cv-placeholder"><b>WAM:</b> 77.8 (H2A). Equivalent to 3.3/4.0 GPA.</p>
+            </article>
+        </section>
+
+        <section class="cv-section">
+            <h2>Skills</h2>
+            <ul class="cv-tags">
+                <li>TypeScript</li>
+                <li>SQL (PostgreSQL)</li>
+                <li>Node.js</li>
+                <li>React.js</li>
+                <li>Next.js</li>
+                <li>Redux</li>
+                <li>AWS (S3, SNS, SQS)</li>
+                <li>Cypress, Jest</li>
+                <li>Docker</li>
+                <li>Postman</li>
+                <li>CI/CD (CircleCI, GitHub Actions)</li>
+                <li>Observability (New Relic)</li>
+                <li>Atlassian Suite (Jira, Confluence)</li>
+            </ul>
+        </section>
+
+        <section class="cv-section">
+            <h2>Interests</h2>
+            <ul class="cv-tags">
+                <li>Road cycling</li>
+                <li>Mechanical keyboards</li>
+                <li>GeoGuessr</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
