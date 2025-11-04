@@ -126,7 +126,7 @@
         <span></span>
     </div>
     <main>
-        <p>I'm 21. Currently I'm working as a Software Engineer at Luxury Escapes, and prior to that I interned at CSIRO's Australian e-Health Research Centre. <a href="https://aehrc.csiro.au/wp-content/uploads/2025/10/AEHRC-ANNUAL-REPORT-2024_25.pdf#page=126">My CSIRO project</a> involved using 3D web frameworks to reconstruct medical scans, which was integrated into <a href="https://aehrc.csiro.au/wp-content/uploads/2025/10/AEHRC-ANNUAL-REPORT-2024_25.pdf#page=69">CSIRO's wider Zendaya Image Analysis Platform</a>.</p>
+        <p>I'm <span id="age"></span>. Currently I'm working as a Software Engineer at Luxury Escapes, and prior to that I interned at CSIRO's Australian e-Health Research Centre. <a href="https://aehrc.csiro.au/wp-content/uploads/2025/10/AEHRC-ANNUAL-REPORT-2024_25.pdf#page=126">My CSIRO project</a> involved using 3D web frameworks to reconstruct medical scans, which was integrated into <a href="https://aehrc.csiro.au/wp-content/uploads/2025/10/AEHRC-ANNUAL-REPORT-2024_25.pdf#page=69">CSIRO's wider Zendaya Image Analysis Platform</a>.</p>
         <p>I live in Sydney, Australia. My usual coffee order is a large flat white, and sometimes with oat milk if I'm feeling good.</p>
         <p>I made this website to put on my LinkedIn, so I’d have an excuse to send more connection requests. I want more people checking out my website. I try to work on my own projects outside of work as well - it complements my work, and vice versa.</p>
         <p><a href="https://www.reddit.com/r/ProgrammerHumor/comments/5n8t7x/comp_sci_professor_website_starter_pack/">Professor-style websites</a> look really cool, so I'm making my site similar but with a Sydney touch.</p>
@@ -135,5 +135,21 @@
         <p>reach out! <a href="mailto:chntt@xyz.com">chntt [at] xyz [dot] com</a></p>
     </main>
     <script type="module" src="assets/js/theme-toggle.js"></script>
+    <script>
+        const birthday = new Date("2004-06-08")
+        const today = new Date();
+
+        let yearsPassed = today.getFullYear() - birthday.getFullYear();
+
+        const hasNotHadAnniversary =
+            today.getMonth() < birthday.getMonth() ||
+            (today.getMonth() === birthday.getMonth() && today.getDate() < birthday.getDate());
+
+        if (hasNotHadAnniversary) {
+            yearsPassed--;
+        }
+        
+        document.getElementById("age").textContent = yearsPassed
+    </script>
 </body>
 </html>
