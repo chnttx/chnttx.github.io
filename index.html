@@ -78,20 +78,27 @@
         .main-text {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            p {
-                margin: 0 0 1.5em;
-                width: min(85%, 640px);
-                line-height: 1.6;
-                font-size: 1.05rem;
-            }
+            align-items: stretch;
+        }
+
+        .main-text p {
+            margin: 0 auto 1.5em;
+            width: min(85%, 640px);
+            line-height: 1.6;
+            font-size: 1.05rem;
         }
 
         .nav {
             display: flex;
-            p {
-                margin-right: 1rem;
-            }
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 1rem;
+            width: min(85%, 640px);
+            margin: 0 auto 1.5rem;
+        }
+
+        .nav p {
+            margin: 0;
         }
     </style>
 </head>
@@ -132,11 +139,10 @@
         <span></span>
     </div>
     <main>
-        <div class="nav">
-            <p><a href="./vitae.html">vitae</a></p>
-            <p><a href="./notes/index.html">geoguessr notes</a></p>
-        </div>
         <div class="main-text">
+            <div class="nav">
+                <p><a href="./vitae.html">vita</a></p>
+            </div>
             <p>I'm <span id="age"></span>. Currently I'm working as a Software Engineer at Luxury Escapes, and prior to that I interned at CSIRO's Australian e-Health Research Centre. <a href="https://aehrc.csiro.au/wp-content/uploads/2025/10/AEHRC-ANNUAL-REPORT-2024_25.pdf#page=126">My CSIRO project</a> involved using 3D web frameworks to reconstruct medical scans, which was integrated into <a href="https://aehrc.csiro.au/wp-content/uploads/2025/10/AEHRC-ANNUAL-REPORT-2024_25.pdf#page=69">CSIRO's wider Zendaya Image Analysis Platform</a>.</p>
             <p>I live in Sydney, Australia. My usual coffee order is a large flat white, and sometimes with oat milk if I'm feeling good.</p>
             <p>I made this website to put on my LinkedIn, so I’d have an excuse to send more connection requests. I want more people checking out my website. I try to work on my own projects outside of work as well - it complements my work, and vice versa.</p>
