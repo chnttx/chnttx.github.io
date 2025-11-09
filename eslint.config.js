@@ -13,7 +13,8 @@ export default defineConfig([
       "indent": "error",
       "no-trailing-spaces": "error",
       "one-var-declaration-per-line": "error",
-      "semi": "never"
+      "semi": "never",
+      "no-var": "error"
     } 
   },
 ]);
