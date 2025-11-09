@@ -12,7 +12,7 @@ export default defineConfig([
       "eol-last": "error",
       "indent": "error",
       "no-trailing-spaces": "error",
-      "one-var-declaration-per=line": "error",
+      "one-var-declaration-per-line": "error",
       "semi": "never"
     } 
   },
