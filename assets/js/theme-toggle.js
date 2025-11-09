@@ -34,7 +34,7 @@ if (toggle) {
         try {
             window.localStorage.setItem(storageKey, nextTheme);
         } catch (error) {
-            // Storage might be disabled; ignore persistence errors.
+            console.log({error})
         }
     });
 }
