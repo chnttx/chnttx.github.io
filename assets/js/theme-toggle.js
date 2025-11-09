@@ -1,4 +1,3 @@
-// Generated from assets/ts/theme-toggle.ts
 const storageKey = 'preferred-theme';
 const lightClass = 'theme-light';
 const darkClass = 'theme-dark';
