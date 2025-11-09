@@ -3,5 +3,17 @@ import globals from "globals";
 import { defineConfig } from "eslint/config";
 
 export default defineConfig([
-  { files: ["**/*.{js,mjs,cjs}"], plugins: { js }, extends: ["js/recommended"], languageOptions: { globals: globals.browser } },
+  { 
+    files: ["**/*.{js,mjs,cjs}"], 
+    plugins: { js }, 
+    extends: ["js/recommended"], 
+    languageOptions: { globals: globals.browser }, 
+    rules: {
+      "eol-last": "error",
+      "indent": "error",
+      "no-trailing-spaces": "error",
+      "one-var-declaration-per=line": "error",
+      "semi": "never"
+    } 
+  },
 ]);
