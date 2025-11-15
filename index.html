@@ -153,21 +153,5 @@
         </div>
     </main>
     <script type="module" src="/main.ts"></script>
-    <script>
-        const birthday = new Date("2004-06-08")
-        const today = new Date();
-
-        let yearsPassed = today.getFullYear() - birthday.getFullYear();
-
-        const hasNotHadAnniversary =
-            today.getMonth() < birthday.getMonth() ||
-            (today.getMonth() === birthday.getMonth() && today.getDate() < birthday.getDate());
-
-        if (hasNotHadAnniversary) {
-            yearsPassed--;
-        }
-        
-        document.getElementById("age").textContent = yearsPassed
-    </script>
 </body>
 </html>
