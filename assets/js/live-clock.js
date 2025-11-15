@@ -1,8 +1,7 @@
 import { formatInTimeZone } from 'date-fns-tz';
 
-const clockElement = document.getElementById("clock");
-
 function initClock() {
+    const clockElement = document.getElementById("clock");
     if (!clockElement) return;
 
     const updateClock = () => {
@@ -17,6 +16,8 @@ function initClock() {
     setInterval(updateClock, 1000);
 }
 
-initClock().catch(error => {
-    console.error("Live clock failed to initialize", error);
-});
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initClock);
+} else {
+    initClock();
+}
