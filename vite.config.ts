@@ -1,15 +1,26 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  build: {
-    outDir: 'dist',
-    emptyOutDir: true,
-    rollupOptions: {
-      input: {
-        main: './index.html',
-        vitae: './vitae.html'
+  server: {
+    port: 5173,
+    strictPort: true,
+    proxy: {
+      '/docs': {
+        target: 'http://localhost:5174',
+        changeOrigin: true,
+        ws: true
       }
     }
   },
-  root: '.',
-})
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: "./index.html",
+        CV: "./CV.html"
+      },
+    },
+  },
+  root: ".",
+});

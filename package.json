@@ -1,26 +1,32 @@
 {
   "name": "chnttx.github.io",
-  "module": "index.ts",
-  "devDependencies": {
-    "@eslint/js": "^9.39.1",
-    "@types/bun": "latest",
-    "eslint": "^9.39.1",
-    "globals": "^16.5.0",
-    "vite": "^7.2.2"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
   "private": true,
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "bunx eslint .",
-    "lint:fix": "bunx eslint . --fix"
-  },
   "type": "module",
+  "scripts": {
+    "dev": "bunx vite --port 5173 --strictPort",
+    "build": "bunx vite build && bunx vitepress build docs",
+    "preview": "bunx vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "docs:dev": "vitepress dev docs --port 5174 --strictPort",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "dev:all": "concurrently -k -n site,docs -c \"#8a5631,#7a4d2b\" \"bunx vite --port 5173 --strictPort\" \"vitepress dev docs --port 5174 --strictPort\"",
+    "prepare": "husky"
+  },
   "dependencies": {
+    "concurrently": "^9.2.1",
     "date-fns-tz": "^3.2.0"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "oxfmt": "^0.26.0",
+    "oxlint": "^1.41.0",
+    "typescript": "^5.5.4",
+    "vite": "^7.2.2",
+    "vitepress": "^2.0.0-alpha.15"
   }
 }

@@ -1,0 +1,297 @@
+.petals {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.petals span {
+  --x-start: 50;
+  --x-end: 48;
+  --rotation: 540deg;
+  --scale: 1;
+  position: absolute;
+  top: -10vh;
+  left: 0;
+  width: 16px;
+  height: 24px;
+  background: radial-gradient(circle at 30% 30%, #d6a8ff 0%, #b375e8 60%, #8d4ec9 100%);
+  border-radius: 65% 35% 70% 30%;
+  opacity: 0;
+  filter: drop-shadow(0 4px 6px rgba(59, 22, 99, 0.2));
+  animation: fall 12s linear infinite;
+}
+
+.petals span:nth-child(1) {
+  --x-start: 5;
+  --x-end: 2;
+  --rotation: 600deg;
+  animation-duration: 14s;
+  animation-delay: -3s;
+}
+
+.petals span:nth-child(2) {
+  --x-start: 15;
+  --x-end: 10;
+  --scale: 0.9;
+  animation-duration: 12s;
+  animation-delay: -6s;
+}
+
+.petals span:nth-child(3) {
+  --x-start: 25;
+  --x-end: 22;
+  --rotation: 720deg;
+  animation-duration: 16s;
+  animation-delay: -9s;
+}
+
+.petals span:nth-child(4) {
+  --x-start: 35;
+  --x-end: 32;
+  --scale: 1.1;
+  animation-duration: 13s;
+  animation-delay: -1s;
+}
+
+.petals span:nth-child(5) {
+  --x-start: 45;
+  --x-end: 40;
+  --rotation: 660deg;
+  animation-duration: 15s;
+  animation-delay: -5s;
+}
+
+.petals span:nth-child(6) {
+  --x-start: 55;
+  --x-end: 58;
+  --scale: 0.85;
+  animation-duration: 11s;
+  animation-delay: -7s;
+}
+
+.petals span:nth-child(7) {
+  --x-start: 65;
+  --x-end: 60;
+  --rotation: 700deg;
+  animation-duration: 17s;
+  animation-delay: -11s;
+}
+
+.petals span:nth-child(8) {
+  --x-start: 75;
+  --x-end: 73;
+  --scale: 0.95;
+  animation-duration: 13s;
+  animation-delay: -4s;
+}
+
+.petals span:nth-child(9) {
+  --x-start: 85;
+  --x-end: 80;
+  --rotation: 580deg;
+  animation-duration: 12s;
+  animation-delay: -8s;
+}
+
+.petals span:nth-child(10) {
+  --x-start: 95;
+  --x-end: 88;
+  --scale: 1.05;
+  animation-duration: 14s;
+  animation-delay: -10s;
+}
+
+.petals span:nth-child(11) {
+  --x-start: 20;
+  --x-end: 18;
+  --scale: 0.8;
+  animation-duration: 18s;
+  animation-delay: -13s;
+}
+
+.petals span:nth-child(12) {
+  --x-start: 40;
+  --x-end: 44;
+  --rotation: 620deg;
+  animation-duration: 16s;
+  animation-delay: -15s;
+}
+
+.petals span:nth-child(13) {
+  --x-start: 60;
+  --x-end: 56;
+  --scale: 1.2;
+  animation-duration: 19s;
+  animation-delay: -12s;
+}
+
+.petals span:nth-child(14) {
+  --x-start: 80;
+  --x-end: 78;
+  --rotation: 540deg;
+  animation-duration: 15s;
+  animation-delay: -14s;
+}
+
+.petals span:nth-child(15) {
+  --x-start: 30;
+  --x-end: 28;
+  --scale: 1.15;
+  animation-duration: 17s;
+  animation-delay: -16s;
+}
+
+.petals span:nth-child(16) {
+  --x-start: 12;
+  --x-end: 6;
+  --scale: 0.9;
+  --rotation: 680deg;
+  animation-duration: 14s;
+  animation-delay: -18s;
+}
+
+.petals span:nth-child(17) {
+  --x-start: 18;
+  --x-end: 15;
+  --scale: 1.05;
+  --rotation: 760deg;
+  animation-duration: 20s;
+  animation-delay: -19s;
+}
+
+.petals span:nth-child(18) {
+  --x-start: 28;
+  --x-end: 32;
+  --scale: 0.85;
+  --rotation: 600deg;
+  animation-duration: 12s;
+  animation-delay: -17s;
+}
+
+.petals span:nth-child(19) {
+  --x-start: 38;
+  --x-end: 36;
+  --scale: 1.2;
+  --rotation: 820deg;
+  animation-duration: 18s;
+  animation-delay: -22s;
+}
+
+.petals span:nth-child(20) {
+  --x-start: 48;
+  --x-end: 52;
+  --scale: 0.95;
+  --rotation: 560deg;
+  animation-duration: 11s;
+  animation-delay: -20s;
+}
+
+.petals span:nth-child(21) {
+  --x-start: 58;
+  --x-end: 55;
+  --scale: 1.1;
+  --rotation: 780deg;
+  animation-duration: 16s;
+  animation-delay: -21s;
+}
+
+.petals span:nth-child(22) {
+  --x-start: 68;
+  --x-end: 70;
+  --scale: 0.88;
+  --rotation: 640deg;
+  animation-duration: 13s;
+  animation-delay: -24s;
+}
+
+.petals span:nth-child(23) {
+  --x-start: 78;
+  --x-end: 74;
+  --scale: 1.15;
+  --rotation: 720deg;
+  animation-duration: 19s;
+  animation-delay: -23s;
+}
+
+.petals span:nth-child(24) {
+  --x-start: 88;
+  --x-end: 92;
+  --scale: 0.92;
+  --rotation: 580deg;
+  animation-duration: 12s;
+  animation-delay: -25s;
+}
+
+.petals span:nth-child(25) {
+  --x-start: 8;
+  --x-end: 4;
+  --scale: 1.05;
+  --rotation: 700deg;
+  animation-duration: 15s;
+  animation-delay: -27s;
+}
+
+.petals span:nth-child(26) {
+  --x-start: 22;
+  --x-end: 18;
+  --scale: 0.9;
+  --rotation: 580deg;
+  animation-duration: 11s;
+  animation-delay: -26s;
+}
+
+.petals span:nth-child(27) {
+  --x-start: 32;
+  --x-end: 37;
+  --scale: 1.2;
+  --rotation: 840deg;
+  animation-duration: 21s;
+  animation-delay: -28s;
+}
+
+.petals span:nth-child(28) {
+  --x-start: 42;
+  --x-end: 39;
+  --scale: 0.82;
+  --rotation: 620deg;
+  animation-duration: 14s;
+  animation-delay: -30s;
+}
+
+.petals span:nth-child(29) {
+  --x-start: 72;
+  --x-end: 76;
+  --scale: 1.1;
+  --rotation: 760deg;
+  animation-duration: 18s;
+  animation-delay: -29s;
+}
+
+.petals span:nth-child(30) {
+  --x-start: 82;
+  --x-end: 79;
+  --scale: 0.87;
+  --rotation: 600deg;
+  animation-duration: 13s;
+  animation-delay: -31s;
+}
+
+@keyframes fall {
+  0% {
+    transform: translate3d(calc(var(--x-start) * 1vw), -10vh, 0) scale(var(--scale)) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.85;
+  }
+  70% {
+    opacity: 0.95;
+  }
+  100% {
+    transform: translate3d(calc(var(--x-end) * 1vw), 110vh, 0) scale(var(--scale))
+      rotate(var(--rotation));
+    opacity: 0;
+  }
+}
