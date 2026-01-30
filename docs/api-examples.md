@@ -18,12 +18,15 @@ const { theme, page, frontmatter } = useData()
 ## Results
 
 ### Theme Data
+
 <pre class="runtime-code" v-text="JSON.stringify(theme, null, 2)"></pre>
 
 ### Page Data
+
 <pre class="runtime-code" v-text="JSON.stringify(page, null, 2)"></pre>
 
 ### Page Frontmatter
+
 <pre class="runtime-code" v-text="JSON.stringify(frontmatter, null, 2)"></pre>
 ```
 
@@ -36,12 +39,15 @@ const { site, theme, page, frontmatter } = useData()
 ## Results
 
 ### Theme Data
+
 <pre class="runtime-code" v-text="JSON.stringify(theme, null, 2)"></pre>
 
 ### Page Data
+
 <pre class="runtime-code" v-text="JSON.stringify(page, null, 2)"></pre>
 
 ### Page Frontmatter
+
 <pre class="runtime-code" v-text="JSON.stringify(frontmatter, null, 2)"></pre>
 
 ## More

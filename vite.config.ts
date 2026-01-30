@@ -5,12 +5,12 @@ export default defineConfig({
     port: 5173,
     strictPort: true,
     proxy: {
-      '/docs': {
-        target: 'http://localhost:5174',
+      "/docs": {
+        target: "http://localhost:5174",
         changeOrigin: true,
-        ws: true
-      }
-    }
+        ws: true,
+      },
+    },
   },
   build: {
     outDir: "dist",
@@ -18,7 +18,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: "./index.html",
-        CV: "./CV.html"
+        CV: "./CV.html",
       },
     },
   },
