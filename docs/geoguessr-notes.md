@@ -19,3 +19,4 @@ Myself mostly. I learn something better when I note it down, which is why I made
 - Tropical vegetation + wide open roads probably means you're in Queensland, drier = more inland and vice versa. Far North Queensland (Cairns area) is **very** tropical (palm trees + dark green vegetation + mountains). Sugarcane plantations are also good North Queensland signal.
 - Yellow number plates are exclusively NSW. While you might see NSW-registered cars in other states as well, and the state does have multiple number plate designs, if you see multiple yellow plates, then there's a very high chance you're in NSW.
 - Utility poles in Melbourne feature white rectangular stickers with smaller blue square inside it.
+- In Queensland, public schools are named as "town/suburb State School".
