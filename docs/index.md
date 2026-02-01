@@ -24,7 +24,9 @@ hero:
       text: Russia
       link: /russia
 ---
+
 ## Motivation
+
 As you've probably read before, I'm currently Master I in the game. At that level, vibe-guessing (a.k.a. `this grass looks Mongolian`) doesn't cut it anymore, and some country/region-specific hints appear reliably enough that learning them can win you that 4.5x multi round. These notes are compiled through my games playing NM/NMPZ at Master I/II levels: low-hanging fruit that you remember from losing that one deciding round, or playing a few practice maps.
 
 ## Who might benefit from this

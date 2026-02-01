@@ -9,20 +9,20 @@
 ## New South Wales (NSW)
 
 - Yellow number plates are exclusively NSW. While you might see NSW-registered cars in other states as well, and the state does have multiple number plate designs, if you see multiple yellow plates, then there's a very high chance you're in NSW.
-![nsw plate](../public/images/australia/nsw_plate.png){.img-size}
+  ![nsw plate](../public/images/australia/nsw_plate.png){.img-size}
 - Vast majority of buses in NSW are light blue.
 
 ## Victoria (VIC)
 
 - Utility poles in Melbourne feature white rectangular stickers with smaller blue square inside it.
-![melb sticker](../public/images/australia/melb_sticker.png){.img-size}
+  ![melb sticker](../public/images/australia/melb_sticker.png){.img-size}
 - Poletop.
-![vic poletop](../public/images/australia/vic_poletop.png){.img-size}
+  ![vic poletop](../public/images/australia/vic_poletop.png){.img-size}
 
 ## Northern Territory (NT)
 
 - Northern Territory uses holey poles.
-![nt pole](../public/images/australia/nt_pole.png){.img-size}
+  ![nt pole](../public/images/australia/nt_pole.png){.img-size}
 
 ## Tasmania (TAS)
 
@@ -33,4 +33,4 @@
 
 - Stobie poles
 - This weird poletop
-![sa poletop](../public/images/australia/sa_poletop.png)
+  ![sa poletop](../public/images/australia/sa_poletop.png)

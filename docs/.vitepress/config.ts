@@ -8,9 +8,7 @@ export default defineConfig({
   outDir: "../dist/docs",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: "Home", link: "../index.html", target: "_self" },
-    ],
+    nav: [{ text: "Home", link: "../index.html", target: "_self" }],
 
     search: {
       provider: "local",
