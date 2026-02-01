@@ -76,6 +76,11 @@
         font-weight: 500;
       }
 
+      .cv-emphasis {
+        font-weight: 800;
+        color: #241530;
+      }
+
       .cv-entry ul {
         margin: 0;
         padding-left: 1.2rem;
@@ -101,9 +106,9 @@
       }
 
       .cv-placeholder {
-        color: rgba(36, 21, 48, 0.65);
-        font-style: italic;
-        line-height: 1.6;
+        color: rgba(36, 21, 48, 0.75);
+        /* font-style: italic; */
+        line-height: calc(1.6em + 2px);
       }
 
       @media print {
@@ -157,12 +162,12 @@
         <h2>Experience</h2>
         <article class="cv-entry">
           <div class="cv-entry__meta">
-            <h3><span class="cv-placeholder">Software Engineer · Luxury Escapes</span></h3>
+            <h3><span class="cv-placeholder cv-emphasis">Software Engineer · Luxury Escapes</span></h3>
             <span class="cv-placeholder">Jun 2025 - Present · Sydney, Australia</span>
           </div>
           <ul>
             <li class="cv-placeholder">
-              <strong>Campaign Systems &amp; Personalisation</strong>
+              <strong class="cv-emphasis">Campaign Systems &amp; Personalisation</strong>
               <span class="cv-placeholder">· Jun 2025 - Present</span>
               <ul>
                 <li class="cv-placeholder">
@@ -193,7 +198,8 @@
               </ul>
             </li>
             <li class="cv-placeholder">
-              <strong>Localisation</strong> <span class="cv-placeholder">· Jan 2026 - Present</span>
+              <strong class="cv-emphasis">Localisation</strong>
+              <span class="cv-placeholder">· Jan 2026 - Present</span>
               <ul>
                 <li class="cv-placeholder">
                   Currently I am working on enabling multi-language support to enable Luxury
@@ -219,7 +225,7 @@
         <article class="cv-entry">
           <div class="cv-entry__meta">
             <h3>
-              <span class="cv-placeholder"
+              <span class="cv-placeholder cv-emphasis"
                 >Vacation Student - Software Engineer · CSIRO - Australian e-Health Research
                 Centre</span
               >
@@ -264,7 +270,9 @@
         </article>
         <article class="cv-entry">
           <div class="cv-entry__meta">
-            <h3><span class="cv-placeholder">Intern Engineer · SEA Software Company</span></h3>
+            <h3>
+              <span class="cv-placeholder cv-emphasis">Intern Engineer · SEA Software Company</span>
+            </h3>
             <span class="cv-placeholder">Summer 2023 - 2024 · Remote, Vietnam</span>
           </div>
           <ul>
@@ -288,11 +296,50 @@
         </section> -->
 
       <section class="cv-section">
+        <h2>Personal Projects</h2>
+        <article class="cv-entry">
+          <div class="cv-entry__meta">
+            <h3>
+              <span class="cv-placeholder"
+                >Customer Portal Dev Experimentation Panel - LE Hackathon</span
+              >
+            </h3>
+            <span class="cv-placeholder">React, Redux, Zod</span>
+          </div>
+          <ul>
+            <li class="cv-placeholder">
+              Built a customer portal developer panel to allow live editing and previewing of
+              feature-flag JSON payloads from the campaign system, enabling frontend engineers to
+              validate UI changes without switching between customer and campaign portals.
+            </li>
+          </ul>
+        </article>
+        <article class="cv-entry">
+          <div class="cv-entry__meta">
+            <h3><span class="cv-placeholder">KaraokeJump</span></h3>
+            <span class="cv-placeholder">React, Python, FastAPI, Spleeter, Whisper</span>
+          </div>
+          <ul>
+            <li class="cv-placeholder">
+              Built the React frontend with a clean upload-to-play flow, responsive layout, and
+              audio progress sync for lyric highlighting.
+            </li>
+            <li class="cv-placeholder">
+              Enabled song uploads using Whisper and Spleeter to generate real-time synchronized
+              lyrics with 75% detection accuracy.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="cv-section">
         <h2>Education</h2>
         <article class="cv-entry">
           <div class="cv-entry__meta">
             <h3>
-              <span class="cv-placeholder">BSc. in Computer Science · University of Melbourne</span>
+              <span class="cv-placeholder cv-emphasis"
+                >BSc. in Computer Science · University of Melbourne</span
+              >
             </h3>
             <span class="cv-placeholder">2022 — 2025</span>
           </div>
@@ -304,7 +351,9 @@
         <article class="cv-entry">
           <div class="cv-entry__meta">
             <h3>
-              <span class="cv-placeholder">Informal Exchange · University of Queensland</span>
+              <span class="cv-placeholder cv-emphasis"
+                >Informal Exchange · University of Queensland</span
+              >
             </h3>
             <span class="cv-placeholder">Summer 2024 — 2025</span>
           </div>
