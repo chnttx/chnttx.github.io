@@ -278,6 +278,186 @@
   animation-delay: -31s;
 }
 
+.petals span:nth-child(31) {
+  --x-start: 4;
+  --x-end: 9;
+  --scale: 0.98;
+  --rotation: 720deg;
+  animation-duration: 16s;
+  animation-delay: -33s;
+}
+
+.petals span:nth-child(32) {
+  --x-start: 14;
+  --x-end: 12;
+  --scale: 0.83;
+  --rotation: 560deg;
+  animation-duration: 12s;
+  animation-delay: -35s;
+}
+
+.petals span:nth-child(33) {
+  --x-start: 24;
+  --x-end: 20;
+  --scale: 1.12;
+  --rotation: 820deg;
+  animation-duration: 19s;
+  animation-delay: -34s;
+}
+
+.petals span:nth-child(34) {
+  --x-start: 34;
+  --x-end: 38;
+  --scale: 0.9;
+  --rotation: 640deg;
+  animation-duration: 14s;
+  animation-delay: -36s;
+}
+
+.petals span:nth-child(35) {
+  --x-start: 44;
+  --x-end: 41;
+  --scale: 1.18;
+  --rotation: 760deg;
+  animation-duration: 17s;
+  animation-delay: -38s;
+}
+
+.petals span:nth-child(36) {
+  --x-start: 54;
+  --x-end: 59;
+  --scale: 0.86;
+  --rotation: 600deg;
+  animation-duration: 13s;
+  animation-delay: -37s;
+}
+
+.petals span:nth-child(37) {
+  --x-start: 64;
+  --x-end: 61;
+  --scale: 1.05;
+  --rotation: 740deg;
+  animation-duration: 18s;
+  animation-delay: -39s;
+}
+
+.petals span:nth-child(38) {
+  --x-start: 74;
+  --x-end: 77;
+  --scale: 0.92;
+  --rotation: 580deg;
+  animation-duration: 12s;
+  animation-delay: -41s;
+}
+
+.petals span:nth-child(39) {
+  --x-start: 84;
+  --x-end: 81;
+  --scale: 1.2;
+  --rotation: 840deg;
+  animation-duration: 20s;
+  animation-delay: -40s;
+}
+
+.petals span:nth-child(40) {
+  --x-start: 94;
+  --x-end: 90;
+  --scale: 0.88;
+  --rotation: 620deg;
+  animation-duration: 15s;
+  animation-delay: -42s;
+}
+
+.petals span:nth-child(41) {
+  --x-start: 6;
+  --x-end: 3;
+  --scale: 1.1;
+  --rotation: 780deg;
+  animation-duration: 17s;
+  animation-delay: -44s;
+}
+
+.petals span:nth-child(42) {
+  --x-start: 16;
+  --x-end: 21;
+  --scale: 0.85;
+  --rotation: 600deg;
+  animation-duration: 13s;
+  animation-delay: -43s;
+}
+
+.petals span:nth-child(43) {
+  --x-start: 26;
+  --x-end: 23;
+  --scale: 1.15;
+  --rotation: 820deg;
+  animation-duration: 19s;
+  animation-delay: -45s;
+}
+
+.petals span:nth-child(44) {
+  --x-start: 36;
+  --x-end: 33;
+  --scale: 0.9;
+  --rotation: 660deg;
+  animation-duration: 14s;
+  animation-delay: -47s;
+}
+
+.petals span:nth-child(45) {
+  --x-start: 46;
+  --x-end: 50;
+  --scale: 1.22;
+  --rotation: 860deg;
+  animation-duration: 21s;
+  animation-delay: -46s;
+}
+
+.petals span:nth-child(46) {
+  --x-start: 56;
+  --x-end: 53;
+  --scale: 0.84;
+  --rotation: 620deg;
+  animation-duration: 12s;
+  animation-delay: -48s;
+}
+
+.petals span:nth-child(47) {
+  --x-start: 66;
+  --x-end: 70;
+  --scale: 1.05;
+  --rotation: 760deg;
+  animation-duration: 18s;
+  animation-delay: -50s;
+}
+
+.petals span:nth-child(48) {
+  --x-start: 76;
+  --x-end: 73;
+  --scale: 0.95;
+  --rotation: 580deg;
+  animation-duration: 13s;
+  animation-delay: -49s;
+}
+
+.petals span:nth-child(49) {
+  --x-start: 86;
+  --x-end: 89;
+  --scale: 1.12;
+  --rotation: 740deg;
+  animation-duration: 16s;
+  animation-delay: -51s;
+}
+
+.petals span:nth-child(50) {
+  --x-start: 96;
+  --x-end: 93;
+  --scale: 0.9;
+  --rotation: 640deg;
+  animation-duration: 14s;
+  animation-delay: -52s;
+}
+
 @keyframes fall {
   0% {
     transform: translate3d(calc(var(--x-start) * 1vw), -10vh, 0) scale(var(--scale)) rotate(0deg);
