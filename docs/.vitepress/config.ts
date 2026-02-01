@@ -9,7 +9,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Home", link: "/" },
+      { text: "Home", link: "../index.html", target: "_self" },
       { text: "GeoGuessr Notes", link: "/geoguessr-notes" },
     ],
 
