@@ -94,15 +94,15 @@
 
       .nav {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: flex-start;
         gap: 1rem;
         width: min(85%, 640px);
         margin: 0 auto 1.5rem;
       }
 
-      .nav p {
-        margin: 0;
+      .nav a {
+        display: inline-block;
       }
     </style>
   </head>
@@ -146,8 +146,8 @@
       <div class="main-text">
         <p id="clock"></p>
         <div class="nav">
-          <p><a href="/CV.html">CV</a></p>
-          <p><a href="/docs/">Docs</a></p>
+          <a href="/CV.html">CV</a>
+          <a href="/docs/">Docs</a>
         </div>
         <p>
           Currently I'm working at Luxury Escapes as an Associate Engineer. Prior to that, I got the
