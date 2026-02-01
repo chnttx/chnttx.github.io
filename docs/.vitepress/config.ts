@@ -10,7 +10,6 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "../index.html", target: "_self" },
-      { text: "GeoGuessr Notes", link: "/geoguessr-notes" },
     ],
 
     search: {
@@ -19,8 +18,15 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: "Notes",
-        items: [{ text: "GeoGuessr Notes", link: "/geoguessr-notes" }],
+        text: "Countries",
+        items: [
+          { text: "Australia", link: "/australia" },
+          { text: "New Zealand", link: "/new-zealand" },
+          { text: "Brazil", link: "/brazil" },
+          { text: "Canada", link: "/canada" },
+          { text: "United States", link: "/united-states" },
+          { text: "Russia", link: "/russia" },
+        ],
       },
     ],
 
