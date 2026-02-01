@@ -20,9 +20,7 @@ export default defineConfig({
     sidebar: [
       {
         text: "Notes",
-        items: [
-          { text: "GeoGuessr Notes", link: "/geoguessr-notes" },
-        ],
+        items: [{ text: "GeoGuessr Notes", link: "/geoguessr-notes" }],
       },
     ],
 
