@@ -28,7 +28,6 @@
 - This fire hydrant
   ![vic fire hydrant](../images/australia/vic_hydrator.png){.img-size}
 
-
 ## Northern Territory (NT)
 
 - Northern Territory uses rusty holey poles.
@@ -37,7 +36,6 @@
 - The area around Alice Springs features sunny coverage, bright red soil, and large rock formations surrounding the area.
 - Signposts can sometimes feature yellow stickers in the post
   ![nt signpost](../images/australia/nt_signpost.png){.img-size}
-  
 
 ## Tasmania (TAS)
 
