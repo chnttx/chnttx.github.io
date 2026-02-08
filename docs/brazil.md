@@ -36,9 +36,8 @@ Brazil is #3 on the [GeoTime distribution list](https://docs.google.com/spreadsh
 - Southern tip: a lot of farms, flag, low grass, much redder soil
   ![pampa](../images/Brazil/pampa.webp){.img-size}
 
-
 ## Unique trees that I can remember
 
 - Parana pines are unique to southern Brazil (Santa Catarina, Rio Grande do Sul, and Parana). They appear frequently enough that it's worth learning these.
-  ![parana pine](../images/brazil/parana_pine.png){.img-size} 
+  ![parana pine](../images/brazil/parana_pine.png){.img-size}
 - Sugarcane farms are most common in Sao Paulo state
