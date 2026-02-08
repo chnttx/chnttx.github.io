@@ -4,8 +4,8 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "harry's site notes",
   description: "These cover various things I find useful to remember",
-  base: "/docs/",
-  outDir: "../dist/docs",
+  base: "/geoguessr-notes/",
+  outDir: "../dist/geoguessr-notes",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [{ text: "Home", link: "../index.html", target: "_self" }],
