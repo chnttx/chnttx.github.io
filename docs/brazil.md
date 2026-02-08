@@ -26,15 +26,15 @@ Brazil is #3 on the [GeoTime distribution list](https://docs.google.com/spreadsh
 - Northeast: dry, almost no trees, slightly blue/grey vegetation
   ![caatinga](../images/brazil/caatinga.webp){.img-size}
 - Northwest: tropical, green forests. Brazil coverage is east heavy so it's unlikely you'd get this
-  ![amazonia](../images/brazil/amazonia.webp){.img-size}
+  ![amazonia](../images/brazil/amazonas.webp){.img-size}
 - Southwest - Mato Grosso do Sul: very lush vegetation, red soil, tall trees
   ![pantanal](../images/brazil/pantanal.webp){.img-size}
 - Central - north north-east: Not too dry, almost no trees and high bushes
-  ![cerrado](../images/Brazil/cerrado.webp){.img-size}
+  ![cerrado](../images/brazil/cerrado.webp){.img-size}
 - Eastern Atlantic Coast: green, tall forest. Looks a lot more temperate
-  ![atlantic](../images/Brazil/atlantic.webp){.img-size}
+  ![atlantic](../images/brazil/atlantic.webp){.img-size}
 - Southern tip: a lot of farms, flag, low grass, much redder soil
-  ![pampa](../images/Brazil/pampa.webp){.img-size}
+  ![pampa](../images/brazil/pampa.webp){.img-size}
 
 ## Unique trees that I can remember
 
