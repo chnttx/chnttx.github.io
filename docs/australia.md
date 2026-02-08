@@ -3,34 +3,66 @@
 ## Queensland (QLD)
 
 - Tropical vegetation + wide open roads probably means you're in Queensland, drier = more inland and vice versa. Far North Queensland (Cairns area) is **very** tropical (palm trees + dark green vegetation + mountains). Sugarcane plantations are also good North Queensland signal.
-- If you see a school with "... State School" or "... State High School", then you're in Queensland.
-- Buses are very common in Brisbane/SEQ area. They're yellow, and sometimes can find them in white/green liveries as well.
+- Utility poles are usually green, with a blue sticker. Electricity poles have black markings with white numbers on the diagonal.
+  ![qld pole](../images/australia/qld_pole.png){.img-size}
+- If you see a school with `... State School` or `... State High School`, then you're in Queensland.
+- Buses are the main public transport in Brisbane/SEQ area. They're yellow, and sometimes can find them in white/green liveries as well.
+  ![brisbane_bus](../images/australia/brisbane_bus.png){.img-size}
+- Black and yellow bollards
+  ![qld bollard](../images/australia/qld_bollard.png){.img-size}
 
 ## New South Wales (NSW)
 
 - Yellow number plates are exclusively NSW. While you might see NSW-registered cars in other states as well, and the state does have multiple number plate designs, if you see multiple yellow plates, then there's a very high chance you're in NSW.
-  ![nsw plate](../public/images/australia/nsw_plate.png){.img-size}
+  ![nsw plate](../images/australia/nsw_plate.png){.img-size}
 - Vast majority of buses in NSW are light blue.
+- Red background `No Stopping` sign
+  ![nsw no stopping](../images/australia/nsw_no_stopping.png){.img-size}
 
 ## Victoria (VIC)
 
 - Utility poles in Melbourne feature white rectangular stickers with smaller blue square inside it.
-  ![melb sticker](../public/images/australia/melb_sticker.png){.img-size}
+  ![melb sticker](../images/australia/melb_sticker.png){.img-size}
 - Poletop.
-  ![vic poletop](../public/images/australia/vic_poletop.png){.img-size}
+  ![vic poletop](../images/australia/vic_poletop.png){.img-size}
+- This fire hydrant
+  ![vic fire hydrant](../images/australia/vic_hydrator.png){.img-size}
+
 
 ## Northern Territory (NT)
 
-- Northern Territory uses holey poles.
-  ![nt pole](../public/images/australia/nt_pole.png){.img-size}
+- Northern Territory uses rusty holey poles.
+  ![nt pole](../images/australia/nt_pole.png){.img-size}
+- Usually the vegetation looks a lot more tropical (rich green grass and trees) AND redder soil the closer it is to Darwin.
+- The area around Alice Springs features sunny coverage, bright red soil, and large rock formations surrounding the area.
+- Signposts can sometimes feature yellow stickers in the post
+  ![nt signpost](../images/australia/nt_signpost.png){.img-size}
+  
 
 ## Tasmania (TAS)
 
 - Olive green possum guard.
 - White background road markers.
+  ![tas road marker](../images/australia/tas_road_marker.png){.img-size}
+- Much more temperate looking landscape with light green rolling hills
 
 ## South Australia (SA)
 
-- Stobie poles
+- Stobie poles consisting of two steel beams sandwiching a slab of concrete
 - This weird poletop
-  ![sa poletop](../public/images/australia/sa_poletop.png)
+  ![sa poletop](../images/australia/sa_poletop.png){.img-size}
+- Around Mount Gambier, you can see white soil and large pine tree plantations
+  ![mt gambier](../images/australia/mt_gambier.png){.img-size}
+
+## Canberra (ACT)
+
+- Canberra was originally [a planned city](https://en.wikipedia.org/wiki/Canberra#Urban_structure), so the city centre features a lot of low-rises. The city looks a lot more open, and resembles American suburbia.
+
+## Western Australia (WA)
+
+- Black and white zebra bollard
+  ![wa bollard](../images/australia/wa_bollard.png){.img-size}
+- Yellow sign post
+  ![wa signpost](../images/australia/wa_signpost.png){.img-size}
+- Utility poles have green painted bottom and metal protector or attachment
+  ![wa pole](../images/australia/wa_pole.png){.img-size}
