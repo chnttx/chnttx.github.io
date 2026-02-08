@@ -1,6 +1,6 @@
 # Brazil
 
-Brazil is #3 on the [GeoTime distribution list](https://docs.google.com/spreadsheets/d/1dfIb3u_B8c2azqx2yiRLxzWhcxHZ1iJcBxP-aaaQCXk/edit?gid=1288120995#gid=1288120995). There's a 1 in 10 chance that your next round would be in Brazil. The country is very learnable with lots of helpful clues.
+Brazil is #2 on the [GeoTime distribution list](https://docs.google.com/spreadsheets/d/1dfIb3u_B8c2azqx2yiRLxzWhcxHZ1iJcBxP-aaaQCXk/edit?gid=1288120995#gid=1288120995). There's a 1 in 10 chance that your next round would be in Brazil. The country is very learnable with lots of helpful clues.
 
 ## Phone codes
 
