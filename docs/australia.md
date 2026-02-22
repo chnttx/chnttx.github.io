@@ -55,7 +55,7 @@
 
 ## Canberra (ACT)
 
-- Canberra was originally [a planned city](https://en.wikipedia.org/wiki/Canberra#Urban_structure), so the city centre features a lot of low-rises. The city looks a lot more open - the buildings in the city centre look like they're used for government offices, and suburban outskirts. I dont have enough deterministic hits for ACT, once you've looked at enough planned cities (i.e. Brasilia, Astana - Kazakhstan) you can just tell. 
+- Canberra was originally [a planned city](https://en.wikipedia.org/wiki/Canberra#Urban_structure), so the city centre features a lot of low-rises. The city looks a lot more open - the buildings in the city centre look like they're used for government offices, and suburban outskirts. I dont have enough deterministic hits for ACT, once you've looked at enough planned cities (i.e. Brasilia, Astana - Kazakhstan) you can just tell.
 
 ## Western Australia (WA)
 
