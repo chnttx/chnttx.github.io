@@ -2,7 +2,7 @@
 
 ## Queensland (QLD)
 
-- Tropical vegetation + wide open roads probably means you're in Queensland, drier = more inland and vice versa. Far North Queensland (Cairns area) is **very** tropical (palm trees + dark green vegetation + mountains). Sugarcane plantations are also good North Queensland signal.
+- Tropical vegetation + wide open roads probably means you're in Queensland, drier = more inland and vice versa. Far North Queensland (Cairns area) is **very** tropical (palm trees + dark green vegetation + mountains). Sugarcane plantations are also good North Queensland signal (Townsville - Mackay corridor).
 - Utility poles are usually green, with a blue sticker. Electricity poles have black markings with white numbers on the diagonal.
   ![qld pole](../public/images/australia/qld_pole.png){.img-size}
 - If you see a school with `... State School` or `... State High School`, then you're in Queensland.
@@ -10,6 +10,7 @@
   ![brisbane_bus](../public/images/australia/brisbane_bus.png){.img-size}
 - Black and yellow bollards
   ![qld bollard](../public/images/australia/qld_bollard.png){.img-size}
+- Any ad/poster for beer brand `XXXX` should be insta send for QLD. Some states have their own iconic breweries as well, but they're not as statewide to put here. The only exceptions I can think of are `Victorian Bitter (VB)` or `Carlton Draught` for VIC.
 
 ## New South Wales (NSW)
 
@@ -54,7 +55,7 @@
 
 ## Canberra (ACT)
 
-- Canberra was originally [a planned city](https://en.wikipedia.org/wiki/Canberra#Urban_structure), so the city centre features a lot of low-rises. The city looks a lot more open, and resembles American suburbia.
+- Canberra was originally [a planned city](https://en.wikipedia.org/wiki/Canberra#Urban_structure), so the city centre features a lot of low-rises. The city looks a lot more open - the buildings in the city centre look like they're used for government offices, and suburban outskirts. I dont have enough deterministic hits for ACT, once you've looked at enough planned cities (i.e. Brasilia, Astana - Kazakhstan) you can just tell. 
 
 ## Western Australia (WA)
 
