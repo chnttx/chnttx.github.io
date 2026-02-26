@@ -1,3 +1,3 @@
-# New Zealand
+# New Zealand 🇳🇿
 
 Notes coming soon.

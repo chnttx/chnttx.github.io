@@ -1,3 +1,3 @@
-# Canada
+# Canada 🇨🇦
 
 Notes coming soon.

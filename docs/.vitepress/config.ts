@@ -18,12 +18,12 @@ export default defineConfig({
       {
         text: "Countries",
         items: [
-          { text: "Australia", link: "/australia" },
-          { text: "New Zealand", link: "/new-zealand" },
-          { text: "Brazil", link: "/brazil" },
-          { text: "Canada", link: "/canada" },
-          { text: "United States", link: "/united-states" },
-          { text: "Russia", link: "/russia" },
+          { text: "Australia 🇦🇺", link: "/australia" },
+          { text: "New Zealand 🇳🇿", link: "/new-zealand" },
+          { text: "Brazil 🇧🇷", link: "/brazil" },
+          { text: "Canada 🇨🇦", link: "/canada" },
+          { text: "United States 🇺🇸", link: "/united-states" },
+          { text: "Russia 🇷🇺", link: "/russia" },
         ],
       },
     ],

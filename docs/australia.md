@@ -1,4 +1,4 @@
-# Australia
+# Australia 🇦🇺
 
 ## Queensland (QLD)
 
