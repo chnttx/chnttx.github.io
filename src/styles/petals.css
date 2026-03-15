@@ -458,6 +458,15 @@
   animation-delay: -52s;
 }
 
+/* Lotus petals for Vietnamese locale */
+:root[data-locale="vn"] .petals span {
+  background: radial-gradient(ellipse at 40% 35%, #fff5f8 0%, #ffd6e7 55%, #ffaac8 100%);
+  border-radius: 50% 50% 60% 40% / 65% 65% 35% 35%;
+  inline-size: 18px;
+  block-size: 26px;
+  filter: drop-shadow(0 4px 6px rgba(200, 60, 110, 0.15));
+}
+
 @keyframes fall {
   0% {
     transform: translate3d(calc(var(--x-start) * 1vw), -10vh, 0) scale(var(--scale)) rotate(0deg);

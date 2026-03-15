@@ -41,6 +41,20 @@ body.theme-dark {
   --toggle-hover-bg: rgba(67, 42, 103, 0.9);
 }
 
+:root[data-locale="vn"] body.theme-light {
+  --bg-gradient: linear-gradient(180deg, #e8f5ee 0%, #f5fbf7 60%);
+  --text-color: #0f2d1a;
+  --toggle-bg: rgba(255, 255, 255, 0.85);
+  --toggle-border: rgba(15, 45, 26, 0.2);
+  --toggle-color: #0f2d1a;
+  --toggle-hover-bg: rgba(216, 243, 225, 0.95);
+}
+
+:root[data-locale="vn"] body.theme-dark {
+  --bg-gradient: linear-gradient(180deg, #1e4028 0%, #274f33 60%);
+  --toggle-hover-bg: rgba(30, 80, 45, 0.9);
+}
+
 .top-controls {
   position: fixed;
   top: 1rem;

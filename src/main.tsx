@@ -10,6 +10,7 @@ import "./styles/petals.css";
 
 document.documentElement.lang = intlLocale;
 document.documentElement.dir = "rtl";
+document.documentElement.dataset.locale = locale;
 
 const messages = locale === "vn" ? vn : undefined;
 
