@@ -139,9 +139,7 @@ export default function App() {
               defaultMessage="reach out! <link>harrynguyen8624 [at] gmail [dot] com</link>"
               description="Sixth paragraph with contact link"
               values={{
-                link: (chunks) => (
-                  <a href="mailto:harrynguyen8624@gmail.com">{chunks}</a>
-                ),
+                link: (chunks) => <a href="mailto:harrynguyen8624@gmail.com">{chunks}</a>,
               }}
             />
           </p>
