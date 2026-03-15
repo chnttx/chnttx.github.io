@@ -1,6 +1,18 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "plugins": [],
+  "jsPlugins": ["eslint-plugin-formatjs"],
+  "rules": {
+    "formatjs/enforce-id": [
+      "error",
+      {
+        "idInterpolationPattern": "[sha512:contenthash:base64url:10]"
+      }
+    ],
+    "formatjs/enforce-description": "error",
+    "formatjs/no-literal-string-in-jsx": "error",
+    "formatjs/enforce-default-message": "error"
+  },
   "categories": {
     "correctness": "off"
   },
