@@ -1,340 +1,286 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CV</title>
-        <link rel="stylesheet" href="/src/styles/base.css" />
-        <style>
-            body {
-                margin: 0;
-                background: #f8f5ff;
-                color: #241530;
-                font-size: 17px;
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <style>
+      body {
+        margin: 0;
+        background: #f8f5ff;
+        color: #241530;
+        font-size: 17px;
+      }
 
-            .cv-page {
-                max-width: 864px;
-                margin: 0 auto;
-                padding: 3rem 1.5rem 4rem;
-                display: flex;
-                flex-direction: column;
-                gap: 1.75rem;
-            }
+      .cv-page {
+        max-width: 864px;
+        margin: 0 auto;
+        padding: 3rem 1.5rem 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.75rem;
+      }
 
-            .cv-header {
-                display: flex;
-                flex-direction: column;
-                gap: 0.75rem;
-            }
+      .cv-header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
 
-            .cv-header h1 {
-                margin: 0;
-                font-size: clamp(2.3rem, 6vw, 3.2rem);
-            }
+      .cv-header h1 {
+        margin: 0;
+        font-size: clamp(2.3rem, 6vw, 3.2rem);
+      }
 
-            .cv-contact {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-                display: flex;
-                flex-wrap: wrap;
-                gap: 0.6rem 1.25rem;
-            }
+      .cv-contact {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem 1.25rem;
+      }
 
-            .cv-contact li {
-                font-size: 0.95rem;
-            }
+      .cv-contact li {
+        font-size: 0.95rem;
+      }
 
-            .cv-section {
-                display: flex;
-                flex-direction: column;
-                gap: 0.8rem;
-            }
+      .cv-section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+      }
 
-            h2 {
-                margin: 0;
-                font-size: 1.2rem;
-                letter-spacing: 0.03em;
-                text-transform: uppercase;
-            }
+      h2 {
+        margin: 0;
+        font-size: 1.2rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
 
-            .cv-entry {
-                display: flex;
-                flex-direction: column;
-                gap: 0.5rem;
-            }
+      .cv-entry {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
 
-            .cv-entry__meta {
-                display: flex;
-                flex-direction: column;
-                gap: 0.25rem;
-                font-weight: 600;
-            }
+      .cv-entry__meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        font-weight: 600;
+      }
 
-            .cv-entry__meta span {
-                color: rgba(36, 21, 48, 0.7);
-                font-weight: 500;
-            }
+      .cv-entry__meta span {
+        color: rgba(36, 21, 48, 0.7);
+        font-weight: 500;
+      }
 
-            .cv-emphasis {
-                font-weight: 800;
-                color: #241530;
-            }
+      .cv-emphasis {
+        font-weight: 800;
+        color: #241530;
+      }
 
-            .cv-entry ul {
-                margin: 0;
-                padding-left: 1.2rem;
-                display: grid;
-                gap: 0.4rem;
-            }
+      .cv-entry ul {
+        margin: 0;
+        padding-left: 1.2rem;
+        display: grid;
+        gap: 0.4rem;
+      }
 
-            .cv-entry > ul {
-                gap: 0.15rem;
-            }
+      .cv-entry > ul {
+        gap: 0.15rem;
+      }
 
-            .cv-tags {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-                display: flex;
-                flex-wrap: wrap;
-                gap: 0.6rem;
-            }
+      .cv-tags {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+      }
 
-            .cv-tags li {
-                border: 1px solid rgba(36, 21, 48, 0.25);
-                padding: 0.35rem 0.7rem;
-                border-radius: 999px;
-                font-size: 0.9rem;
-                color: rgba(36, 21, 48, 0.65);
-            }
+      .cv-tags li {
+        border: 1px solid rgba(36, 21, 48, 0.25);
+        padding: 0.35rem 0.7rem;
+        border-radius: 999px;
+        font-size: 0.9rem;
+        color: rgba(36, 21, 48, 0.65);
+      }
 
-            .cv-placeholder {
-                color: rgba(36, 21, 48, 0.75);
-                /* font-style: italic; */
-                line-height: calc(1.6em + 2px);
-            }
+      .cv-placeholder {
+        color: rgba(36, 21, 48, 0.75);
+        /* font-style: italic; */
+        line-height: calc(1.6em + 2px);
+      }
 
-            .cv-subsection-title {
-                font-size: 1.05rem;
-                font-weight: 700;
-                letter-spacing: 0.01em;
-                color: #241530;
-            }
+      .cv-subsection-title {
+        font-size: 1.05rem;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: #241530;
+      }
 
-            .cv-tech-stack {
-                color: rgba(36, 21, 48, 0.55);
-                font-style: italic;
-                margin-block-start: 0.1rem;
-            }
+      .cv-tech-stack {
+        color: rgba(36, 21, 48, 0.55);
+        font-style: italic;
+        margin-block-start: 0.1rem;
+      }
 
-            .cv-skills {
-                display: flex;
-                flex-direction: column;
-                gap: 0.6rem;
-            }
+      .cv-skills {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
 
-            .cv-skills__group {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: baseline;
-                gap: 0.3rem 0.5rem;
-            }
+      .cv-skills__group {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 0.3rem 0.5rem;
+      }
 
-            .cv-skills__label {
-                font-weight: 700;
-                color: #241530;
-                white-space: nowrap;
-            }
+      .cv-skills__label {
+        font-weight: 700;
+        color: #241530;
+        white-space: nowrap;
+      }
 
-            @media print {
-                body {
-                    background: #fff;
-                    color: #000;
-                }
+      @media print {
+        body {
+          background: #fff;
+          color: #000;
+        }
 
-                .cv-page {
-                    padding: 1.5cm;
-                    gap: 2rem;
-                }
+        .cv-page {
+          padding: 1.5cm;
+          gap: 2rem;
+        }
 
-                .cv-tags li {
-                    border-color: rgba(0, 0, 0, 0.3);
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <main class="cv-page">
-            <a href="./index.html">back to home</a>
-            <header class="cv-header">
-                <h1><span class="cv-placeholder">Harry Nguyen</span></h1>
-                <p>
-                    <span class="cv-placeholder"
-                        >Software Engineer · 42 Wallaby Way, Sydney,
-                        Australia</span
-                    >
-                </p>
-                <ul class="cv-contact">
-                    <li>
-                        <span class="cv-placeholder"
-                            ><a href="mailto:chntt@xyz.com"
-                                >chntt [at] xyz [dot] com</a
-                            ></span
-                        >
+        .cv-tags li {
+          border-color: rgba(0, 0, 0, 0.3);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="cv-page">
+      <a href="./index.html">back to home</a>
+      <header class="cv-header">
+        <h1><span class="cv-placeholder">Harry Nguyen</span></h1>
+        <p>
+          <span class="cv-placeholder">Software Engineer · 42 Wallaby Way, Sydney, Australia</span>
+        </p>
+        <ul class="cv-contact">
+          <li>
+            <span class="cv-placeholder"
+              ><a href="mailto:chntt@xyz.com">chntt [at] xyz [dot] com</a></span
+            >
+          </li>
+          <li>
+            <span class="cv-placeholder">website : you are here</span>
+          </li>
+          <li>
+            <span class="cv-placeholder"
+              ><a href="https://www.linkedin.com/in/thn864/">linkedin/in/thn864</a></span
+            >
+          </li>
+        </ul>
+      </header>
+
+      <section class="cv-section">
+        <p class="cv-placeholder">
+          Full-stack engineer specialising in localisation and personalisation systems, working
+          across React/Vue frontends, Node.js/Express backends, and AWS infrastructure. I'm
+          comfortable working across both greenfield projects and legacy codebases.
+        </p>
+        <p class="cv-placeholder">
+          I work across the entire stack — designing REST APIs, modelling data schemas, and building
+          frontend systems that ship to production and move business metrics. The work I've
+          delivered has supported features reaching 2 million monthly users with measurable
+          improvements to conversion and operational efficiency.
+        </p>
+      </section>
+
+      <section class="cv-section">
+        <h2>Experience</h2>
+        <article class="cv-entry">
+          <div class="cv-entry__meta">
+            <h3>
+              <span class="cv-placeholder cv-emphasis">Software Engineer · Luxury Escapes</span>
+            </h3>
+            <span class="cv-placeholder">2025 - Present · Sydney, Australia</span>
+          </div>
+          <ul>
+            <li class="cv-placeholder">
+              <span class="cv-subsection-title">Localisation Engineering & Multi-language</span>
+              <div class="cv-tech-stack">
+                Tech stack: Node.js/Bun, TypeScript, CircleCI, AWS CloudFront, React.js, FormatJS
+              </div>
+              <ul>
+                <li class="cv-placeholder">
+                  Helping expand Luxury Escapes into EMEA markets, building infrastructure and
+                  tooling for multi-language support at scale.
+                  <ul>
+                    <li class="cv-placeholder">
+                      Architected a CircleCI build pipeline generating pre-built per-locale JS
+                      bundles distributed via CloudFront, reducing bundle size by 20% (gzipped 2.8MB
+                      → 1.7MB) with improved cache isolation across languages.
                     </li>
-                    <li>
-                        <span class="cv-placeholder"
-                            >website : you are here</span
-                        >
+                    <li class="cv-placeholder">
+                      Built a translation evaluation pipeline combining LLM-as-judge quality
+                      scoring, deterministic validity checks (ICU syntax, markdown/URL/HTML,
+                      foreign-script detection), and a Slack-gated human review queue for sensitive
+                      content.
                     </li>
-                    <li>
-                        <span class="cv-placeholder"
-                            ><a href="https://www.linkedin.com/in/thn864/"
-                                >linkedin/in/thn864</a
-                            ></span
-                        >
+                    <li class="cv-placeholder">
+                      Authored a CSS-in-JS/styled-components codemod to migrate physical CSS to
+                      logical CSS for RTL compatibility, enforced via lint rule with autofix.
                     </li>
-                </ul>
-            </header>
-
-            <section class="cv-section">
-                <p class="cv-placeholder">
-                    Full-stack engineer specialising in localisation and
-                    personalisation systems, working across React/Vue frontends,
-                    Node.js/Express backends, and AWS infrastructure. I'm
-                    comfortable working across both greenfield projects and
-                    legacy codebases.
-                </p>
-                <p class="cv-placeholder">
-                    I work across the entire stack — designing REST APIs,
-                    modelling data schemas, and building frontend systems that
-                    ship to production and move business metrics. The work I've
-                    delivered has supported features reaching 2 million monthly
-                    users with measurable improvements to conversion and
-                    operational efficiency.
-                </p>
-            </section>
-
-            <section class="cv-section">
-                <h2>Experience</h2>
-                <article class="cv-entry">
-                    <div class="cv-entry__meta">
-                        <h3>
-                            <span class="cv-placeholder cv-emphasis"
-                                >Software Engineer · Luxury Escapes</span
-                            >
-                        </h3>
-                        <span class="cv-placeholder"
-                            >2025 - Present · Sydney, Australia</span
-                        >
-                    </div>
-                    <ul>
-                        <li class="cv-placeholder">
-                            <span class="cv-subsection-title"
-                                >Localisation Engineering & Multi-language</span
-                            >
-                            <div class="cv-tech-stack">
-                                Tech stack: Node.js/Bun, TypeScript, CircleCI,
-                                AWS CloudFront, React.js, FormatJS
-                            </div>
-                            <ul>
-                                <li class="cv-placeholder">
-                                    Helping expand Luxury Escapes into EMEA
-                                    markets, building infrastructure and tooling
-                                    for multi-language support at scale.
-                                    <ul>
-                                        <li class="cv-placeholder">
-                                            Architected a CircleCI build
-                                            pipeline generating pre-built
-                                            per-locale JS bundles distributed
-                                            via CloudFront, reducing bundle size
-                                            by 20% (gzipped 2.8MB → 1.7MB) with
-                                            improved cache isolation across
-                                            languages.
-                                        </li>
-                                        <li class="cv-placeholder">
-                                            Built a translation evaluation
-                                            pipeline combining LLM-as-judge
-                                            quality scoring, deterministic
-                                            validity checks (ICU syntax,
-                                            markdown/URL/HTML, foreign-script
-                                            detection), and a Slack-gated human
-                                            review queue for sensitive content.
-                                        </li>
-                                        <li class="cv-placeholder">
-                                            Authored a
-                                            CSS-in-JS/styled-components codemod
-                                            to migrate physical CSS to logical
-                                            CSS for RTL compatibility, enforced
-                                            via lint rule with autofix.
-                                        </li>
-                                        <!--<li class="cv-placeholder">
+                    <!--<li class="cv-placeholder">
                                             Scaled consistent i18n patterns
                                             across LE's main verticals through
                                             mentoring devs on best practices and
                                             reducing i18n mistakes caught in PR
                                             review.
                                         </li>-->
-                                        <li class="cv-placeholder">
-                                            Migrated ~4,500 out of 8,000
-                                            components to i18n-ready patterns
-                                            with AI parallel agents and
-                                            pseudolocalisation to validate text
-                                            expansion, non-Latin rendering, and
-                                            RTL layout before translation
-                                            handoff.
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="cv-placeholder">
-                            <span class="cv-subsection-title"
-                                >Campaign Systems & Personalisation</span
-                            >
-                            <div class="cv-tech-stack">
-                                Tech stack: React.js, Node.js/Bun, Optimizely,
-                                Snowplow, BigQuery
-                            </div>
-                            <ul>
-                                <li class="cv-placeholder">
-                                    I improve user experience by building
-                                    reusable UI that lets teams ship and iterate
-                                    safely without constant engineering
-                                    involvement, and deliver targeted on-site
-                                    experiences that adapt content to different
-                                    audience segments.
-                                    <ul>
-                                        <li class="cv-placeholder">
-                                            Implemented cohort-based
-                                            personalisation for 2 million
-                                            monthly active users, driven by
-                                            BigQuery preference signals synced
-                                            hourly — including dynamic hotel
-                                            inclusions (hotel on-site search CVR
-                                            21% → 29%), homepage carousel
-                                            reordering (view-tour CVR 34% → 55%
-                                            during tours campaign), and
-                                            AI-generated marketing headlines
-                                            tailored to each audience segment,
-                                            improving conversion rate by ~7%
-                                            across core user flows.
-                                        </li>
-                                        <li class="cv-placeholder">
-                                            Built a reusable site takeover
-                                            template integrated with the
-                                            internal design system and powered
-                                            by feature-flag-driven
-                                            configuration, used across major
-                                            marketing campaigns (Best of 2025,
-                                            Lunar New Year, Only in Australia) —
-                                            saving approximately 1 frontend
-                                            sprint of engineering effort per
-                                            campaign.
-                                        </li>
-                                        <!--<li class="cv-placeholder">
+                    <li class="cv-placeholder">
+                      Migrated ~4,500 out of 8,000 components to i18n-ready patterns with AI
+                      parallel agents and pseudolocalisation to validate text expansion, non-Latin
+                      rendering, and RTL layout before translation handoff.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="cv-placeholder">
+              <span class="cv-subsection-title">Campaign Systems & Personalisation</span>
+              <div class="cv-tech-stack">
+                Tech stack: React.js, Node.js/Bun, Optimizely, Snowplow, BigQuery
+              </div>
+              <ul>
+                <li class="cv-placeholder">
+                  I improve user experience by building reusable UI that lets teams ship and iterate
+                  safely without constant engineering involvement, and deliver targeted on-site
+                  experiences that adapt content to different audience segments.
+                  <ul>
+                    <li class="cv-placeholder">
+                      Implemented cohort-based personalisation for 2 million monthly active users,
+                      driven by BigQuery preference signals synced hourly — including dynamic hotel
+                      inclusions (hotel on-site search CVR 21% → 29%), homepage carousel reordering
+                      (view-tour CVR 34% → 55% during tours campaign), and AI-generated marketing
+                      headlines tailored to each audience segment, improving conversion rate by ~7%
+                      across core user flows.
+                    </li>
+                    <li class="cv-placeholder">
+                      Built a reusable site takeover template integrated with the internal design
+                      system and powered by feature-flag-driven configuration, used across major
+                      marketing campaigns (Best of 2025, Lunar New Year, Only in Australia) — saving
+                      approximately 1 frontend sprint of engineering effort per campaign.
+                    </li>
+                    <!--<li class="cv-placeholder">
                                             Integrated component-level A/B
                                             testing with Optimizely/Snowplow to
                                             monitor experiment performance and
@@ -342,88 +288,74 @@
                                             improving release confidence during
                                             high-traffic campaign periods.
                                         </li>-->
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </article>
-                <article class="cv-entry">
-                    <div class="cv-entry__meta">
-                        <h3>
-                            <span class="cv-placeholder cv-emphasis"
-                                >Intern Software Engineer · CSIRO - Australian
-                                e-Health Research Centre</span
-                            >
-                        </h3>
-                        <span class="cv-placeholder"
-                            >2024 - 2025 · Brisbane, Australia</span
-                        >
-                    </div>
-                    <ul>
-                        <li class="cv-placeholder">
-                            <a
-                                href="https://aehrc.csiro.au/wp-content/uploads/2025/10/AEHRC-ANNUAL-REPORT-2024_25.pdf#page=126"
-                                >My CSIRO project</a
-                            >
-                            involved using 3D web frameworks to reconstruct
-                            medical scans, which was integrated into
-                            <a
-                                href="https://aehrc.csiro.au/wp-content/uploads/2025/10/AEHRC-ANNUAL-REPORT-2024_25.pdf#page=69"
-                                >CSIRO's wider Zendaya Image Analysis
-                                Platform</a
-                            >. Key features include:
-                            <ul>
-                                <li class="cv-placeholder">
-                                    Simultaneous rendering of volumetric object
-                                    in axial, sagittal, and coronal planes.
-                                </li>
-                                <li class="cv-placeholder">
-                                    In-browser parsing of DICOM imaging metadata
-                                    to human-readable JSON format.
-                                </li>
-                                <li class="cv-placeholder">
-                                    3D interactions (pan/zoom/crosshairs/color
-                                    adjustment) through mouse and keyboard
-                                    shortcuts.
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="cv-placeholder">
-                            I was responsible for end-to-end delivery of the
-                            project, from scoping out user requirements,
-                            designing prototypes to coding, testing and
-                            integration.
-                        </li>
-                        <li class="cv-placeholder">
-                            Presentation title: Multiplanar Reconstruction for
-                            MRI/CT scans, supervised by Liz Cooper, PhD. and
-                            Jason Dowling, PhD. - 14/02/2025.
-                        </li>
-                    </ul>
-                </article>
-                <article class="cv-entry">
-                    <div class="cv-entry__meta">
-                        <h3>
-                            <span class="cv-placeholder cv-emphasis"
-                                >Intern Engineer · SEA Software Company</span
-                            >
-                        </h3>
-                        <span class="cv-placeholder"
-                            >Summer 2023 - 2024 · Remote, Vietnam</span
-                        >
-                    </div>
-                    <ul>
-                        <li class="cv-placeholder">
-                            This was my first industry experience. I mainly
-                            wrote back-end .NET and C#, with some front-end
-                            Angular sprinkled in.
-                        </li>
-                    </ul>
-                </article>
-            </section>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+        <article class="cv-entry">
+          <div class="cv-entry__meta">
+            <h3>
+              <span class="cv-placeholder cv-emphasis"
+                >Intern Software Engineer · CSIRO - Australian e-Health Research Centre</span
+              >
+            </h3>
+            <span class="cv-placeholder">2024 - 2025 · Brisbane, Australia</span>
+          </div>
+          <ul>
+            <li class="cv-placeholder">
+              <a
+                href="https://aehrc.csiro.au/wp-content/uploads/2025/10/AEHRC-ANNUAL-REPORT-2024_25.pdf#page=126"
+                >My CSIRO project</a
+              >
+              involved using 3D web frameworks to reconstruct medical scans, which was integrated
+              into
+              <a
+                href="https://aehrc.csiro.au/wp-content/uploads/2025/10/AEHRC-ANNUAL-REPORT-2024_25.pdf#page=69"
+                >CSIRO's wider Zendaya Image Analysis Platform</a
+              >. Key features include:
+              <ul>
+                <li class="cv-placeholder">
+                  Simultaneous rendering of volumetric object in axial, sagittal, and coronal
+                  planes.
+                </li>
+                <li class="cv-placeholder">
+                  In-browser parsing of DICOM imaging metadata to human-readable JSON format.
+                </li>
+                <li class="cv-placeholder">
+                  3D interactions (pan/zoom/crosshairs/color adjustment) through mouse and keyboard
+                  shortcuts.
+                </li>
+              </ul>
+            </li>
+            <li class="cv-placeholder">
+              I was responsible for end-to-end delivery of the project, from scoping out user
+              requirements, designing prototypes to coding, testing and integration.
+            </li>
+            <li class="cv-placeholder">
+              Presentation title: Multiplanar Reconstruction for MRI/CT scans, supervised by Liz
+              Cooper, PhD. and Jason Dowling, PhD. - 14/02/2025.
+            </li>
+          </ul>
+        </article>
+        <article class="cv-entry">
+          <div class="cv-entry__meta">
+            <h3>
+              <span class="cv-placeholder cv-emphasis">Intern Engineer · SEA Software Company</span>
+            </h3>
+            <span class="cv-placeholder">Summer 2023 - 2024 · Remote, Vietnam</span>
+          </div>
+          <ul>
+            <li class="cv-placeholder">
+              This was my first industry experience. I mainly wrote back-end .NET and C#, with some
+              front-end Angular sprinkled in.
+            </li>
+          </ul>
+        </article>
+      </section>
 
-            <!-- <section class="cv-section">
+      <!-- <section class="cv-section">
             <h2>Projects</h2>
             <article class="cv-entry">
                 <div class="cv-entry__meta">
@@ -434,115 +366,109 @@
             </article>
         </section> -->
 
-            <section class="cv-section">
-                <h2>Personal Projects</h2>
-                <article class="cv-entry">
-                    <div class="cv-entry__meta">
-                        <h3>
-                            <span class="cv-placeholder"
-                                >Customer Portal Dev Experimentation Panel - LE
-                                Hackathon</span
-                            >
-                        </h3>
-                        <span class="cv-placeholder">React, Redux, Zod</span>
-                    </div>
-                    <ul>
-                        <li class="cv-placeholder">
-                            Built a customer portal developer panel to allow
-                            live editing and previewing of feature-flag JSON
-                            payloads from the campaign system, enabling frontend
-                            engineers to validate UI changes without switching
-                            between customer and campaign portals.
-                        </li>
-                    </ul>
-                </article>
-                <article class="cv-entry">
-                    <div class="cv-entry__meta">
-                        <h3><span class="cv-placeholder">KaraokeJump</span></h3>
-                        <span class="cv-placeholder"
-                            >React, Python, FastAPI, Spleeter, Whisper</span
-                        >
-                    </div>
-                    <ul>
-                        <li class="cv-placeholder">
-                            Built the React frontend with a clean upload-to-play
-                            flow, responsive layout, and audio progress sync for
-                            lyric highlighting.
-                        </li>
-                        <li class="cv-placeholder">
-                            Enabled song uploads using Whisper and Spleeter to
-                            generate real-time synchronized lyrics with 75%
-                            detection accuracy.
-                        </li>
-                    </ul>
-                </article>
-            </section>
+      <section class="cv-section">
+        <h2>Personal Projects</h2>
+        <article class="cv-entry">
+          <div class="cv-entry__meta">
+            <h3>
+              <span class="cv-placeholder"
+                >Customer Portal Dev Experimentation Panel - LE Hackathon</span
+              >
+            </h3>
+            <span class="cv-placeholder">React, Redux, Zod</span>
+          </div>
+          <ul>
+            <li class="cv-placeholder">
+              Built a customer portal developer panel to allow live editing and previewing of
+              feature-flag JSON payloads from the campaign system, enabling frontend engineers to
+              validate UI changes without switching between customer and campaign portals.
+            </li>
+          </ul>
+        </article>
+        <article class="cv-entry">
+          <div class="cv-entry__meta">
+            <h3><span class="cv-placeholder">KaraokeJump</span></h3>
+            <span class="cv-placeholder">React, Python, FastAPI, Spleeter, Whisper</span>
+          </div>
+          <ul>
+            <li class="cv-placeholder">
+              Built the React frontend with a clean upload-to-play flow, responsive layout, and
+              audio progress sync for lyric highlighting.
+            </li>
+            <li class="cv-placeholder">
+              Enabled song uploads using Whisper and Spleeter to generate real-time synchronized
+              lyrics with 75% detection accuracy.
+            </li>
+          </ul>
+        </article>
+      </section>
 
-            <section class="cv-section">
-                <h2>Education</h2>
-                <article class="cv-entry">
-                    <div class="cv-entry__meta">
-                        <h3>
-                            <span class="cv-placeholder cv-emphasis"
-                                >BSc. in Computer Science · University of
-                                Melbourne</span
-                            >
-                        </h3>
-                        <span class="cv-placeholder">2022 — 2025</span>
-                    </div>
-                    <p class="cv-placeholder">
-                        <b>WAM:</b> 77.8 (H2A). Equivalent to 3.3/4.0 on a
-                        4-scale GPA, or 6.24/7.0 on a 7-scale GPA.
-                    </p>
-                </article>
-                <article class="cv-entry">
-                    <div class="cv-entry__meta">
-                        <h3>
-                            <span class="cv-placeholder cv-emphasis"
-                                >Informal Exchange · University of
-                                Queensland</span
-                            >
-                        </h3>
-                        <span class="cv-placeholder">Summer 2024 — 2025</span>
-                    </div>
-                    <p class="cv-placeholder">
-                        I met a lot of people and spent a lot of time here
-                        during my stint in Brisbane so you can consider it an
-                        exchange.
-                    </p>
-                </article>
-            </section>
+      <section class="cv-section">
+        <h2>Education</h2>
+        <article class="cv-entry">
+          <div class="cv-entry__meta">
+            <h3>
+              <span class="cv-placeholder cv-emphasis"
+                >BSc. in Computer Science · University of Melbourne</span
+              >
+            </h3>
+            <span class="cv-placeholder">2022 — 2025</span>
+          </div>
+          <p class="cv-placeholder">
+            <b>WAM:</b> 77.8 (H2A). Equivalent to 3.3/4.0 on a 4-scale GPA, or 6.24/7.0 on a 7-scale
+            GPA.
+          </p>
+        </article>
+        <article class="cv-entry">
+          <div class="cv-entry__meta">
+            <h3>
+              <span class="cv-placeholder cv-emphasis"
+                >Informal Exchange · University of Queensland</span
+              >
+            </h3>
+            <span class="cv-placeholder">Summer 2024 — 2025</span>
+          </div>
+          <p class="cv-placeholder">
+            I met a lot of people and spent a lot of time here during my stint in Brisbane so you
+            can consider it an exchange.
+          </p>
+        </article>
+      </section>
 
-            <section class="cv-section">
-                <h2>Skills</h2>
-                <div class="cv-skills">
-                    <div class="cv-skills__group">
-                        <span class="cv-skills__label">Core:</span>
-                        <span class="cv-placeholder">React.js, TypeScript, JavaScript, Node.js/Bun, SQL (PostgreSQL), AWS</span>
-                    </div>
-                    <div class="cv-skills__group">
-                        <span class="cv-skills__label">Observability:</span>
-                        <span class="cv-placeholder">Datadog, New Relic</span>
-                    </div>
-                    <div class="cv-skills__group">
-                        <span class="cv-skills__label">AI-assisted Development:</span>
-                        <span class="cv-placeholder">Cursor, Claude Code/Codex</span>
-                    </div>
-                    <div class="cv-skills__group">
-                        <span class="cv-skills__label">Testing:</span>
-                        <span class="cv-placeholder">Jest/Vitest, Cypress/Playwright, Test-driven development (TDD)</span>
-                    </div>
-                </div>
-            </section>
+      <section class="cv-section">
+        <h2>Skills</h2>
+        <div class="cv-skills">
+          <div class="cv-skills__group">
+            <span class="cv-skills__label">Core:</span>
+            <span class="cv-placeholder"
+              >React.js, TypeScript, JavaScript, Node.js/Bun, SQL (PostgreSQL), AWS</span
+            >
+          </div>
+          <div class="cv-skills__group">
+            <span class="cv-skills__label">Observability:</span>
+            <span class="cv-placeholder">Datadog, New Relic</span>
+          </div>
+          <div class="cv-skills__group">
+            <span class="cv-skills__label">AI-assisted Development:</span>
+            <span class="cv-placeholder">Cursor, Claude Code/Codex</span>
+          </div>
+          <div class="cv-skills__group">
+            <span class="cv-skills__label">Testing:</span>
+            <span class="cv-placeholder"
+              >Jest/Vitest, Cypress/Playwright, Test-driven development (TDD)</span
+            >
+          </div>
+        </div>
+      </section>
 
-            <section class="cv-section">
-                <h2>Interests</h2>
-                <ul class="cv-tags">
-                    <li>Road cycling</li>
-                    <li>Mechanical keyboards</li>
-                    <li>GeoGuessr</li>
-                </ul>
-            </section>
-        </main>
-    </body>
+      <section class="cv-section">
+        <h2>Interests</h2>
+        <ul class="cv-tags">
+          <li>Road cycling</li>
+          <li>Mechanical keyboards</li>
+          <li>GeoGuessr</li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>
