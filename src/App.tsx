@@ -53,12 +53,14 @@ export default function App() {
             ? intl.formatMessage({
                 id: "zQrsiJoYOj",
                 defaultMessage: "Switch to light theme",
-                description: "Theme toggle button label when dark mode is active",
+                description:
+                  "Theme toggle button label when dark mode is active",
               })
             : intl.formatMessage({
                 id: "c0bab_V1oU",
                 defaultMessage: "Switch to dark theme",
-                description: "Theme toggle button label when light mode is active",
+                description:
+                  "Theme toggle button label when light mode is active",
               })}
         </button>
       </div>
@@ -121,7 +123,9 @@ export default function App() {
               description="Fourth paragraph about GeoGuessr"
               values={{
                 link: (chunks) => (
-                  <a href="https://www.geoguessr.com/user/687660725547092f67d9becb">{chunks}</a>
+                  <a href="https://www.geoguessr.com/user/687660725547092f67d9becb">
+                    {chunks}
+                  </a>
                 ),
               }}
             />
@@ -139,10 +143,57 @@ export default function App() {
               defaultMessage="reach out! <link>harrynguyen8624 [at] gmail [dot] com</link>"
               description="Sixth paragraph with contact link"
               values={{
-                link: (chunks) => <a href="mailto:harrynguyen8624@gmail.com">{chunks}</a>,
+                link: (chunks) => (
+                  <a href="mailto:harrynguyen8624@gmail.com">{chunks}</a>
+                ),
               }}
             />
           </p>
+          <p className="ltr">
+            {intl.formatMessage({
+              id: 'v--Tw6wAhn',
+              defaultMessage: "Additional links",
+              description: "Additional links"
+            })}
+          </p>
+          <ol className="ltr">
+            <li>
+              <FormattedMessage
+                id="-2GL15HG2y"
+                defaultMessage="<link>Minh Cung</link> - My old manager who's working on localisation at Heidi Health"
+                description="Link to Minh Cung's website with description"
+                values={{
+                  link: (chunks) => (
+                    <a href="https://minhcung.me/">{chunks}</a>
+                  ),
+                }}
+              />
+            </li>
+            <li>
+              <FormattedMessage
+                id="E5ZYA7IF48"
+                defaultMessage="<link>Mashiro's Baumkuchen</link> - My other teammate on LE's localisation team"
+                description="Link to Mashiro's website with description"
+                values={{
+                  link: (chunks) => (
+                    <a href="https://mashiro.best/">{chunks}</a>
+                  ),
+                }}
+              />
+            </li>
+            <li>
+              <FormattedMessage
+                id="NySKIFDyVM"
+                defaultMessage="<link>William Feng</link> - My other teammate on LE's localisation team"
+                description="Link to William Feng's website with description"
+                values={{
+                  link: (chunks) => (
+                    <a href="https://williamfeng.xyz/">{chunks}</a>
+                  ),
+                }}
+              />
+            </li>
+          </ol>
         </div>
       </main>
     </>

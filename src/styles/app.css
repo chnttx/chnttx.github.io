@@ -132,3 +132,23 @@ main {
 .nav a {
   display: inline-block;
 }
+
+.main-text ol {
+  margin-block-start: 0;
+  margin-block-end: 1.5em;
+  margin-inline: auto;
+  inline-size: min(85%, 640px);
+  line-height: 1.6;
+  font-size: 1.05rem;
+  padding-inline-start: 0;
+  list-style: none;
+  counter-reset: teammates;
+}
+
+.main-text ol li {
+  counter-increment: teammates;
+}
+
+.main-text ol li::after {
+  content: " ." counter(teammates);
+}

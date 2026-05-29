@@ -1,4 +1,8 @@
 {
+  "-2GL15HG2y": {
+    "defaultMessage": "<link>Minh Cung</link> - My old manager who's working on localisation at Heidi Health",
+    "description": "Link to Minh Cung's website with description"
+  },
   "01PG4xgdR3": {
     "defaultMessage": "GeoGuessr notes",
     "description": "Navigation link to GeoGuessr notes page"
@@ -6,6 +10,14 @@
   "52VPGSFbuJ": {
     "defaultMessage": "reach out! <link>harrynguyen8624 [at] gmail [dot] com</link>",
     "description": "Sixth paragraph with contact link"
+  },
+  "BXYEvfwyf-": {
+    "defaultMessage": "I'm {timeLabel} behind you",
+    "description": "Clock relation text when Sydney is behind the visitor"
+  },
+  "E5ZYA7IF48": {
+    "defaultMessage": "<link>Mashiro's Baumkuchen</link> - My other teammate on LE's localisation team",
+    "description": "Link to Mashiro's website with description"
   },
   "JUiejykcm2": {
     "defaultMessage": "<link>I'm currently Master I on GeoGuessr.</link> I try to write detailed region-guessing notes for each country. Hopefully you can learn something from them just as much as I try not to forget them.",
@@ -15,6 +27,10 @@
     "defaultMessage": "I'm a casual road cyclist, and now I'm starting out running.",
     "description": "Fifth paragraph about hobbies"
   },
+  "NySKIFDyVM": {
+    "defaultMessage": "<link>William Feng</link> - My other teammate on LE's localisation team",
+    "description": "Link to William Feng's website with description"
+  },
   "RzRcrOo2P2": {
     "defaultMessage": "I made this website to put on my LinkedIn, so I'd have an excuse to send more connection requests. I want more people checking out my website. I try to work on my own projects outside of work as well - it complements my work, and vice versa.",
     "description": "Second paragraph about the website purpose"
@@ -22,6 +38,14 @@
   "TwXGJZuUNk": {
     "defaultMessage": "Currently I'm working at Luxury Escapes as a Software Engineer. Prior to that, I got the opportunity to work as a Vacation Student at CSIRO under the supervision of Dr. Liz Cooper and Dr. Jason Dowling.",
     "description": "First paragraph about work experience"
+  },
+  "ZeGtYX487Q": {
+    "defaultMessage": "my time: {time} - Sydney. {relation}",
+    "description": "Full clock display text showing Sydney time and timezone relation"
+  },
+  "biWUaiL9y-": {
+    "defaultMessage": "I'm {timeLabel} ahead of you",
+    "description": "Clock relation text when Sydney is ahead of the visitor"
   },
   "c0bab_V1oU": {
     "defaultMessage": "Switch to dark theme",
@@ -39,9 +63,17 @@
     "defaultMessage": "Toggle color theme",
     "description": "Aria label for theme toggle button"
   },
+  "oW2CZZy89s": {
+    "defaultMessage": "I'm the same time as you",
+    "description": "Clock relation text when visitor is in the same timezone"
+  },
   "uMPbIxqkaZ": {
     "defaultMessage": "harry's site",
     "description": "Browser tab title"
+  },
+  "v--Tw6wAhn": {
+    "defaultMessage": "Additional links",
+    "description": "Additional links"
   },
   "zQrsiJoYOj": {
     "defaultMessage": "Switch to light theme",
